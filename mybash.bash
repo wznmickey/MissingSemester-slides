@@ -1,6 +1,6 @@
 for dir in slides/*; do
     if [ -d "$dir" ]; then 
-       nr build $dir/main.md --base $1/$dir       
+       nr build $dir/main.md --base $1/$(echo "$dir" | sed 's/slides\///; s/\//_/g')    
     fi
 done
 
