@@ -1,6 +1,6 @@
 for dir in slides/*; do
     if [ -d "$dir" ]; then 
-       nr build $dir/main.md --base $1         
+       nr build $dir/main.md --base $1/dir         
     fi
 done
 
