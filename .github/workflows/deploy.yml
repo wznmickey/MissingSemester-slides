@@ -32,7 +32,7 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr build shell/shell.md --base /${{github.event.repository.name}}/
+        run: bash mybash.bash /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
