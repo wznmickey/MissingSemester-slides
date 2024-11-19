@@ -29,7 +29,7 @@ jobs:
         run: npm i -g @slidev/cli
 
       - name: Build
-        run: slidev build --base shell/shell.md
+        run: slidev build --base=/${{github.event.repository.name}}/shell/shell.md
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
