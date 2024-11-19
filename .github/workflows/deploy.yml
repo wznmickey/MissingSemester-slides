@@ -26,7 +26,7 @@ jobs:
           node-version: 'lts/*'
 
       - name: Install package
-        run: npm init slidev@latest
+        run: npm i -g @slidev/cli
 
       - name: Build
         run: slidev build --base /${{github.event.repository.name}}/shell/shell.md
